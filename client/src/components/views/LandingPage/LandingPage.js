@@ -6,7 +6,7 @@ import MainImage from "./Sections/MainImage";
 
 function LandingPage() {
   const [movies, setMovies] = useState([]);
-  const [mainMovie, setMainMovie] = useState([]);
+  const [mainMovie, setMainMovie] = useState(null);
 
   useEffect(() => {
     const endPoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
