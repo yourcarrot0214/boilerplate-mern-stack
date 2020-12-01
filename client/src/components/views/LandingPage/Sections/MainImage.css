@@ -1,5 +1,5 @@
 .main-image-card {
-  position: relative;
+  position: absolute;
   max-width: 500px;
   bottom: 2rem;
   margin-left: 2rem;

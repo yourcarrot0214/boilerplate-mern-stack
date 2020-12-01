@@ -23,7 +23,7 @@ function LandingPage() {
       .then((response) => {
         console.log(response);
         setMovies([...movies, ...response.data.results]);
-        setMainMovie(response.data.results[0]);
+        setMainMovie(mainMovie || response.data.results[0]);
         setPageNumber(response.data.page);
       })
       .catch((error) => {
