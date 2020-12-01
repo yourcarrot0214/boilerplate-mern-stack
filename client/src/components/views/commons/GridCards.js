@@ -6,7 +6,7 @@ function GridCards(props) {
   return (
     <Col lg={6} md={8} xs={24}>
       <div className="grid-cards">
-        <a href={props.movieId}>
+        <a href={`/movie/${props.movieId}`}>
           <img src={props.image} alt={props.movieName} />
         </a>
       </div>
