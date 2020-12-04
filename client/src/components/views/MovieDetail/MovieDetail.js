@@ -82,7 +82,7 @@ function MovieDetail(props) {
                     image={
                       cast.profile_path
                         ? `${IMAGE_BASE_URL}w500${cast.profile_path}`
-                        : null
+                        : `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Noimage.svg/130px-Noimage.svg.png`
                     }
                     profileName={cast.name}
                   />
