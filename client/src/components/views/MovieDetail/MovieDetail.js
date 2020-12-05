@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_URL, API_KEY, IMAGE_BASE_URL } from "../../Config";
+import { API_URL, API_KEY, IMAGE_BASE_URL, NO_IMAGE_URL } from "../../Config";
 import MainImage from "../LandingPage/Sections/MainImage";
 import MovieInfo from "./Sections/MovieInfo";
 import GridCards from "../commons/GridCards";
@@ -82,7 +82,7 @@ function MovieDetail(props) {
                     image={
                       cast.profile_path
                         ? `${IMAGE_BASE_URL}w500${cast.profile_path}`
-                        : `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Noimage.svg/130px-Noimage.svg.png`
+                        : `${NO_IMAGE_URL}`
                     }
                     profileName={cast.name}
                   />
